@@ -1,0 +1,768 @@
+
+                        <!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+							<style>
+								body {
+									background-color: white; /* Ensure the iframe has a white background */
+								}
+
+								
+							</style>
+                        </head>
+                        <body>
+                            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APTA CSM 2027 Abstract Writing Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        @page {
+            size: letter;
+            margin: 0.4in;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            font-size: 8.5pt;
+            line-height: 1.35;
+            color: #494755;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.4in;
+            background: #fff;
+        }
+        
+        /* Header */
+        .header {
+            background: #570F8C;
+            color: #fff;
+            padding: 14px 20px;
+            margin: -0.4in -0.4in 12px -0.4in;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 17pt;
+            font-weight: 600;
+            margin-bottom: 3px;
+            letter-spacing: -0.5px;
+        }
+        
+        .header .subtitle {
+            font-size: 9.5pt;
+            opacity: 0.9;
+        }
+        
+        .header .event-details {
+            font-size: 8.5pt;
+            opacity: 0.85;
+            margin-top: 5px;
+        }
+        
+        /* Deadline Banner */
+        .deadline-banner {
+            background: #F6C545;
+            color: #494755;
+            padding: 8px 14px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 9.5pt;
+            margin-bottom: 12px;
+            border-radius: 4px;
+        }
+        
+        .deadline-banner .deadline-date {
+            font-size: 11pt;
+            font-weight: 700;
+            color: #570F8C;
+        }
+        
+        .deadline-banner .fee-note {
+            font-size: 7.5pt;
+            font-weight: 400;
+            margin-top: 2px;
+        }
+        
+        /* Two Column Layout */
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        
+        .column {
+            min-width: 0;
+        }
+        
+        /* Section Styling */
+        .section {
+            margin-bottom: 10px;
+        }
+        
+        .section-title {
+            font-size: 9pt;
+            font-weight: 700;
+            color: #570F8C;
+            border-bottom: 2px solid #570F8C;
+            padding-bottom: 3px;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 8pt;
+        }
+        
+        th {
+            background: #570F8C;
+            color: #fff;
+            text-align: left;
+            padding: 5px 6px;
+            font-weight: 600;
+        }
+        
+        td {
+            padding: 4px 6px;
+            border-bottom: 1px solid #e0e0e0;
+            vertical-align: top;
+        }
+        
+        tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        
+        .type-name {
+            font-weight: 600;
+            color: #570F8C;
+            white-space: nowrap;
+        }
+        
+        /* Rules List */
+        .rules-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .rules-list li {
+            padding: 3px 0;
+            padding-left: 14px;
+            position: relative;
+            font-size: 8pt;
+        }
+        
+        .rules-list li::before {
+            content: "▸";
+            color: #570F8C;
+            position: absolute;
+            left: 0;
+            font-size: 7pt;
+        }
+        
+        .rules-list strong {
+            color: #494755;
+        }
+        
+        .rules-list .warning {
+            color: #c41230;
+            font-weight: 600;
+        }
+        
+        /* Tips Section */
+        .tip-group {
+            margin-bottom: 8px;
+        }
+        
+        .tip-group h4 {
+            font-size: 8.5pt;
+            color: #570F8C;
+            margin-bottom: 3px;
+            font-weight: 600;
+        }
+        
+        .tip-group ul {
+            margin-left: 12px;
+            font-size: 7.5pt;
+        }
+        
+        .tip-group li {
+            margin-bottom: 1px;
+        }
+        
+        /* Resources - Updated for better clickability */
+        .resources-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px;
+            font-size: 7.5pt;
+        }
+        
+        .resource-item {
+            background: #f5f5f5;
+            padding: 5px 6px;
+            border-radius: 3px;
+            border-left: 3px solid #570F8C;
+            transition: background-color 0.2s ease;
+        }
+        
+        .resource-item:hover,
+        .resource-item:active {
+            background: #efe8f5;
+        }
+        
+        .resource-item a {
+            color: #570F8C;
+            text-decoration: underline;
+            font-weight: 600;
+            display: inline;
+            font-size: 7.5pt;
+        }
+        
+        .resource-item a:hover {
+            color: #3d0a63;
+        }
+        
+        .resource-item .external-icon {
+            font-size: 7pt;
+            margin-left: 2px;
+            text-decoration: none;
+            display: inline;
+        }
+        
+        .resource-item span.description {
+            color: #666;
+            font-size: 7pt;
+            display: block;
+            margin-top: 1px;
+        }
+        
+        /* Research Areas */
+        .research-areas {
+            background: #f8f4fc;
+            border: 1px solid #570F8C;
+            border-radius: 4px;
+            padding: 8px;
+            margin-top: 8px;
+        }
+        
+        .research-areas h4 {
+            color: #570F8C;
+            font-size: 8.5pt;
+            margin-bottom: 6px;
+            font-weight: 700;
+        }
+        
+        .area-item {
+            margin-bottom: 4px;
+            font-size: 7.5pt;
+            line-height: 1.3;
+        }
+        
+        .area-item strong {
+            color: #570F8C;
+            font-size: 7.5pt;
+        }
+        
+        .area-item span {
+            color: #666;
+        }
+        
+        /* Callout Box */
+        .callout {
+            background: #f8f4fc;
+            border: 1px solid #570F8C;
+            border-radius: 4px;
+            padding: 8px;
+            margin-top: 8px;
+        }
+        
+        .callout h4 {
+            color: #570F8C;
+            font-size: 8.5pt;
+            margin-bottom: 5px;
+        }
+        
+        .callout ul {
+            margin-left: 12px;
+            font-size: 7.5pt;
+        }
+        
+        .callout li {
+            margin-bottom: 2px;
+        }
+        
+        /* Important Note Box */
+        .important-note {
+            background: #fff8e6;
+            border: 1px solid #F6C545;
+            border-radius: 4px;
+            padding: 6px 8px;
+            margin-top: 8px;
+            font-size: 7.5pt;
+        }
+        
+        .important-note strong {
+            color: #570F8C;
+        }
+        
+        /* Footer */
+        .footer {
+            margin-top: 10px;
+            padding-top: 8px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            font-size: 7pt;
+            color: #888;
+        }
+        
+        .footer a {
+            color: #570F8C;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        /* ================================
+           MOBILE / iOS RESPONSIVE STYLES
+           ================================ */
+        
+        @media screen and (max-width: 768px) {
+            body {
+                font-size: 14px;
+                line-height: 1.5;
+                padding: 16px;
+                max-width: 100%;
+            }
+            
+            .header {
+                margin: -16px -16px 16px -16px;
+                padding: 20px 16px;
+            }
+            
+            .header h1 {
+                font-size: 20pt;
+                line-height: 1.2;
+            }
+            
+            .header .subtitle {
+                font-size: 12pt;
+            }
+            
+            .header .event-details {
+                font-size: 10pt;
+                margin-top: 8px;
+            }
+            
+            .deadline-banner {
+                padding: 12px 16px;
+                font-size: 12pt;
+                margin-bottom: 16px;
+            }
+            
+            .deadline-banner .deadline-date {
+                font-size: 14pt;
+                display: block;
+                margin-top: 4px;
+            }
+            
+            .deadline-banner .fee-note {
+                font-size: 10pt;
+                margin-top: 6px;
+            }
+            
+            /* Single column layout on mobile */
+            .content {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .section {
+                margin-bottom: 16px;
+            }
+            
+            .section-title {
+                font-size: 12pt;
+                padding-bottom: 6px;
+                margin-bottom: 10px;
+            }
+            
+            /* Tables - responsive */
+            table {
+                font-size: 11pt;
+            }
+            
+            th, td {
+                padding: 10px 8px;
+            }
+            
+            .type-name {
+                white-space: normal;
+            }
+            
+            /* Rules List - touch friendly */
+            .rules-list li {
+                font-size: 12pt;
+                padding: 8px 0;
+                padding-left: 20px;
+                line-height: 1.4;
+            }
+            
+            .rules-list li::before {
+                font-size: 10pt;
+                top: 8px;
+            }
+            
+            /* Tips Section */
+            .tip-group {
+                margin-bottom: 14px;
+            }
+            
+            .tip-group h4 {
+                font-size: 12pt;
+                margin-bottom: 6px;
+            }
+            
+            .tip-group ul {
+                font-size: 12pt;
+                margin-left: 16px;
+            }
+            
+            .tip-group li {
+                margin-bottom: 4px;
+                line-height: 1.4;
+            }
+            
+            /* Resources - single column on mobile, larger touch targets */
+            .resources-grid {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+            
+            .resource-item {
+                padding: 12px;
+                min-height: 44px; /* iOS minimum touch target */
+            }
+            
+            .resource-item a {
+                font-size: 13pt;
+            }
+            
+            .resource-item .external-icon {
+                font-size: 11pt;
+            }
+            
+            .resource-item span.description {
+                font-size: 11pt;
+                margin-top: 4px;
+            }
+            
+            /* Research Areas */
+            .research-areas {
+                padding: 14px;
+                margin-top: 16px;
+            }
+            
+            .research-areas h4 {
+                font-size: 12pt;
+                margin-bottom: 10px;
+            }
+            
+            .research-areas p {
+                font-size: 11pt !important;
+                margin-bottom: 10px !important;
+            }
+            
+            .area-item {
+                font-size: 12pt;
+                margin-bottom: 8px;
+                line-height: 1.4;
+            }
+            
+            .area-item strong {
+                font-size: 12pt;
+            }
+            
+            /* Callout Box */
+            .callout {
+                padding: 14px;
+                margin-top: 16px;
+            }
+            
+            .callout h4 {
+                font-size: 12pt;
+                margin-bottom: 8px;
+            }
+            
+            .callout ul {
+                font-size: 12pt;
+                margin-left: 16px;
+            }
+            
+            .callout li {
+                margin-bottom: 6px;
+                line-height: 1.4;
+            }
+            
+            /* Important Note */
+            .important-note {
+                padding: 12px;
+                margin-top: 16px;
+                font-size: 12pt;
+                line-height: 1.4;
+            }
+            
+            /* Footer */
+            .footer {
+                margin-top: 20px;
+                padding-top: 16px;
+                font-size: 10pt;
+                line-height: 1.5;
+            }
+            
+            .footer a {
+                display: inline-block;
+                padding: 4px 0;
+            }
+        }
+        
+        /* Extra small screens (iPhone SE, etc.) */
+        @media screen and (max-width: 375px) {
+            .header h1 {
+                font-size: 18pt;
+            }
+            
+            .deadline-banner .deadline-date {
+                font-size: 13pt;
+            }
+            
+            table {
+                font-size: 10pt;
+            }
+            
+            th, td {
+                padding: 8px 6px;
+            }
+        }
+        
+        /* Print Styles */
+        @media print {
+            body {
+                padding: 0;
+                font-size: 8.5pt;
+            }
+            .header {
+                margin: 0 0 12px 0;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .content {
+                grid-template-columns: 1fr 1fr;
+            }
+            .resources-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .resource-item a {
+                color: #570F8C;
+            }
+            .resource-item:hover {
+                background: #f5f5f5;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Writing Abstracts for APTA CSM 2027</h1>
+        <div class="subtitle">A Quick-Reference Guide for Authors</div>
+        <div class="event-details">Combined Sections Meeting · February 4–6, 2027 · Philadelphia, PA</div>
+    </div>
+    
+    <div class="deadline-banner">
+        📅 Submission Deadline: <span class="deadline-date">July 15, 2026 | 11:59 PM PT</span>
+        <div class="fee-note">$50 non-refundable fee per abstract</div>
+    </div>
+    
+    <div class="content">
+        <!-- LEFT COLUMN -->
+        <div class="column">
+            <div class="section">
+                <div class="section-title">Abstract Types & Required Sections</div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Required Sections</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="type-name">Research Report</td>
+                            <td>Purpose/Hypothesis · Subjects · Methods · Results · Conclusions · Clinical Relevance</td>
+                        </tr>
+                        <tr>
+                            <td class="type-name">Case Study</td>
+                            <td>Background & Purpose · Case Description · Outcomes · Discussion</td>
+                        </tr>
+                        <tr>
+                            <td class="type-name">Special Interest</td>
+                            <td>Purpose · Description · Summary of Use · Importance to Members</td>
+                        </tr>
+                        <tr>
+                            <td class="type-name">Theory Report</td>
+                            <td>Purpose · Description · Summary of Use · Importance to Members</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Submission Rules at a Glance</div>
+                <ul class="rules-list">
+                    <li><strong>Title:</strong> Max 15 words</li>
+                    <li><strong>Abstract length:</strong> Max 3,125 characters (including spaces; excludes authors, institutions, references)</li>
+                    <li><strong>References (Poster):</strong> 5–7 most relevant bibliographic references</li>
+                    <li><strong>References (Platform):</strong> Must be from 2020 or later <span class="warning">— missing references may result in rejection</span></li>
+                    <li><strong>Citations:</strong> In-text encouraged but not required (e.g., [1] or superscript¹)</li>
+                    <li><strong>Originality:</strong> No prior national presentation or publication</li>
+                    <li><strong>Presenting author:</strong> Max 2 abstracts as presenting author; unlimited as secondary</li>
+                    <li><strong>APTA membership:</strong> At least one author must be an active APTA member</li>
+                    <li><strong>Registration:</strong> Accepted authors must register for CSM — no fee waivers for presenters</li>
+                </ul>
+            </div>
+            
+            <div class="research-areas">
+                <h4>📋 APTA Research Areas</h4>
+                <p style="font-size: 7pt; color: #666; margin-bottom: 6px;">Research Reports must select one key area from the APTA Research Agenda:</p>
+                
+                <div class="area-item">
+                    <strong>1. Population Health</strong> — <span>Health disparities, social determinants, health promotion & prevention</span>
+                </div>
+                <div class="area-item">
+                    <strong>2. Mechanistic</strong> — <span>Biological/behavioral processes, pathophysiology, mechanism of action</span>
+                </div>
+                <div class="area-item">
+                    <strong>3. Clinical</strong> — <span>Diagnostic procedures, interventions, technology, factors affecting outcomes</span>
+                </div>
+                <div class="area-item">
+                    <strong>4. Education & Professional Development</strong> — <span>Learning processes, educational outcomes</span>
+                </div>
+                <div class="area-item">
+                    <strong>5. Health Services</strong> — <span>Financing, organizational structures, healthcare access, quality & costs</span>
+                </div>
+                <div class="area-item">
+                    <strong>6. Workforce</strong> — <span>Growth/attrition, provider demographics, practice environments, utilization</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- RIGHT COLUMN -->
+        <div class="column">
+            <div class="section">
+                <div class="section-title">Writing Tips by Section</div>
+                
+                <div class="tip-group">
+                    <h4>✦ For All Abstract Types</h4>
+                    <ul>
+                        <li>Use clear, direct language — avoid jargon</li>
+                        <li>Every sentence must earn its place</li>
+                        <li>Read aloud to catch awkward phrasing</li>
+                    </ul>
+                </div>
+                
+                <div class="tip-group">
+                    <h4>✦ Research Report Tips</h4>
+                    <ul>
+                        <li><strong>Purpose:</strong> State research question & hypothesis in 1–2 sentences</li>
+                        <li><strong>Methods:</strong> Specify design, setting, participants, key measures</li>
+                        <li><strong>Results:</strong> Report actual data with statistics — be specific</li>
+                        <li><strong>Conclusions:</strong> Directly answer the hypothesis; don't overstate</li>
+                        <li><strong>Relevance:</strong> Answer "so what?" for practitioners</li>
+                    </ul>
+                </div>
+                
+                <div class="tip-group">
+                    <h4>✦ Case Study Tips</h4>
+                    <ul>
+                        <li><strong>Background:</strong> Establish why this case is instructive</li>
+                        <li><strong>Description:</strong> Include demographics, diagnosis, interventions</li>
+                        <li><strong>Outcomes:</strong> Use objective measures and functional gains</li>
+                        <li><strong>Discussion:</strong> Connect to literature; note limitations</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="callout">
+                <h4>✓ Quality Checklist</h4>
+                <ul>
+                    <li>Does your title clearly reflect the content?</li>
+                    <li>Have you addressed every required section?</li>
+                    <li>Is clinical relevance or significance explicit?</li>
+                    <li>Have you stayed within word/character limits?</li>
+                    <li>Are all co-authors listed with correct affiliations?</li>
+                    <li>Have you proofread for typos and grammar?</li>
+                </ul>
+            </div>
+            
+            <div class="section" style="margin-top: 10px;">
+                <div class="section-title">High-Yield Writing Resources</div>
+                <div class="resources-grid">
+                    <div class="resource-item">
+                        <a href="https://www.care-statement.org/" target="_blank" rel="noopener">CARE Guidelines</a><span class="external-icon"> ↗</span>
+                        <span class="description">Case report structure & checklist</span>
+                    </div>
+                    <div class="resource-item">
+                        <a href="https://www.equator-network.org/" target="_blank" rel="noopener">EQUATOR Network</a><span class="external-icon"> ↗</span>
+                        <span class="description">Reporting guidelines by study type</span>
+                    </div>
+                    <div class="resource-item">
+                        <a href="https://apastyle.apa.org/instructional-aids/abstract-guide.pdf" target="_blank" rel="noopener">APA Abstract Guide</a><span class="external-icon"> ↗</span>
+                        <span class="description">IMRaD format with examples</span>
+                    </div>
+                    <div class="resource-item">
+                        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3178846/" target="_blank" rel="noopener">How to Write an Abstract</a><span class="external-icon"> ↗</span>
+                        <span class="description">Peer-reviewed guide with examples</span>
+                    </div>
+                    <div class="resource-item">
+                        <a href="https://www.phrasebank.manchester.ac.uk/" target="_blank" rel="noopener">Academic Phrasebank</a><span class="external-icon"> ↗</span>
+                        <span class="description">Scientific phrasing templates</span>
+                    </div>
+                    <div class="resource-item">
+                        <a href="https://casereports.bmj.com/pages/authors/" target="_blank" rel="noopener">BMJ Case Reports</a><span class="external-icon"> ↗</span>
+                        <span class="description">Real-world submission standards</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="important-note">
+                <strong>📌 Presentation Formats:</strong> Posters are displayed for 2 hours during a pre-assigned time. Platform presentations are 10–15 minute oral presentations.
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        Questions? Contact your APTA Academy/Section Research Chair · General inquiries: <a href="mailto:eventprogram@apta.org">eventprogram@apta.org</a> · Full guidelines: <a href="https://csm.apta.org/programming/csm-submissions" target="_blank">csm.apta.org/programming/csm-submissions</a>
+    </div>
+</body>
+</html>
+
+							<script>
+                            	
+							</script>
+                        </body>
+                        </html>
+                    
